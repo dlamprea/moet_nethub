@@ -1,0 +1,15 @@
+<div class="content">
+    <object id="moet_tennis" width="800"></object>
+</div>
+<?php View::partial('usopen/back', false, array('path' => 'liked', 'css' => 'back-flash')) ?>
+
+<?php echo Tag::js('utils/swfobject');?>
+<?php echo Tag::create('script', "var urlMenu = '" . PUBLIC_PATH . Router::get('controller_path') . '/choose' . "'", array("type" => "text/javascript"));?>
+<script type="text/javascript">
+    var params = {
+        wmode: 'transparent'
+    };
+    swfobject.embedSWF("../swf/Moet_Tennis.swf", "moet_tennis", "800", "621", "9.0.0", "../swf/expressInstall.swf", {}, params);
+</script>
+
+<?php View::partial('facebook_api') ?>

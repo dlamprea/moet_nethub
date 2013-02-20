@@ -1,0 +1,25 @@
+<?php View::partial('usopen/back', false, array('path' => 'liked', 'css' => 'back')) ?>
+<div id="wrapper">
+    <ul>
+        <li class="cursor">
+            <?php echo Html::img('celebration.png', 'US Open with Moët & Chandon', array('id' => 'toast'))?>
+        </li>
+        <li>
+            <?php echo Html::linkAction('cover', Html::img('personalize.png'));?>
+        </li>
+        <li style="margin-top:-2px;" class="cursor">
+            <?php echo Html::img('find.png', 'Find Moët & Chandon in New York City', array('id' => 'find'))?>
+        </li>
+        <li style="margin-top:-2px;">
+        	<?php echo Tag::create('a', Html::img('buy.png'), array('href' => 'http://www.ticketmaster.com/US-Open-tickets/artist/807197', 'target' => '_blank')); ?>
+        </li>
+    </ul>
+    <div class="play">
+        <?php echo Html::linkAction('game', Html::img('play.png'));?>
+    </div>
+</div>
+
+<?php View::partial('usopen/map') ?>
+<?php View::partial('usopen/toast') ?>
+
+<?php View::partial('facebook_api') ?>

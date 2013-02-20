@@ -1,0 +1,3 @@
+<div id="fb-root"></div>
+<?php echo Tag::create('script', "var facebookAppId = '" . Config::get('config.facebook.id') . "'", array("type" => "text/javascript"));?>
+<?php echo Tag::js('facebook');?>

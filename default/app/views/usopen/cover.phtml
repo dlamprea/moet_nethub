@@ -1,0 +1,11 @@
+<div class="content">
+    <object id="moet_balls" width="800"></object>
+</div>
+<?php View::partial('usopen/back', false, array('path' => 'choose', 'css' => 'back-flash')) ?>
+<?php echo Tag::js('utils/swfobject');?>
+<script type="text/javascript">
+    var params = {
+        wmode: 'transparent'
+    };
+    swfobject.embedSWF("../swf/Moet_balls.swf", "moet_balls", "800", "557", "9.0.0", "../swf/expressInstall.swf", {}, params);
+</script>

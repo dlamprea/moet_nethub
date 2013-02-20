@@ -1,0 +1,7 @@
+<div class="<?php echo $css; ?>">
+	<?php if($path == ''): ?>
+		<?php echo Html::img('back.png', 'Back', array('id' => 'img-back')); ?>
+	<?php else: ?>
+    	<?php echo Html::linkAction($path, Html::img('back.png', 'Back'));?>
+    <?php endif; ?>
+</div>

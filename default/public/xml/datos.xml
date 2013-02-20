@@ -1,0 +1,6 @@
+<tennis>
+    <leer id="0" nombre="Facebook" src="sendFacebook" />
+    <leer id="1" nombre="Twitter" src="sendTwitter" />
+    <leer id="2" nombre="Sorteo" src="" />
+    <leer id="3" nombre="Menu" src="sendMenu"/>
+</tennis>

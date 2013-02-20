@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv='Content-type' content='text/html; charset=<?php echo APP_CHARSET ?>' />
+  <title><?php echo Config::get('config.application.name') ?></title>
+  <?php Tag::css('style') ?>
+  <?php echo Html::includeCss() ?>
+</head>
+<body>
+	<?php View::content(); ?>
+	<?php echo Tag::create('script', "var PUBLIC_PATH = '" . PUBLIC_PATH . "'");?>
+	<?php echo Tag::js('jquery/jquery.min');?>
+	<?php echo Tag::js('jquery/jquery.simplemodal');?>
+	<?php echo Tag::js('app');?>
+	<?php echo Tag::js('utils/analytics');?>
+</body>
+</html>
